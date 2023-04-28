@@ -35,4 +35,16 @@ class QuizBrain {
     return _questions[_number].answer;
   }
 
+  bool isFinished() {
+    return (_number == _questions.length - 1);
+  }
+
+  void reset() {
+    _number = 0;
+  }
+
+  int getTotal() {
+    return _questions.length;
+  }
+
 }
